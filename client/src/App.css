@@ -1,0 +1,187 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-decoration: none; /*I guess this should not be here but it works*/
+}
+
+body {
+ background: var(--color-bg);
+}
+
+a{
+  color: unset;
+}
+
+
+/*Gradient for backgound*/
+
+.gradient__bg               
+{
+
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 0% 24%, rgba(193, 63, 163, 1) 0%, rgba(52, 219, 255, 0.85) 65%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 0% 24%, rgba(193, 63, 163, 1) 0%, rgba(52, 219, 255, 0.85) 65%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 0% 24%, rgba(193, 63, 163, 1) 0%, rgba(52, 219, 255, 0.85) 65%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 0% 24%, rgba(193, 63, 163, 1) 0%, rgba(52, 219, 255, 0.85) 65%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 0% 24%, rgba(193, 63, 163, 1) 0%, rgba(52, 219, 255, 0.85) 65%);
+
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+
+/*Animations with keyframes*/
+
+.scale-down-center {
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+/*This is for tablets*/
+@media screen and (max-width: 700px){
+  .section__padding{
+    padding: 4rem;
+  }
+
+  .section__margin{
+    margin: 4rem;
+  }
+}
+
+/*This is for mobile divices*/
+@media screen and (max-width: 550px){
+  .section__padding{
+    padding: 4rem 2rem;
+  }
+
+  .section__margin{
+    margin: 4rem 2rem;
+  }
+}
+
+/*Gradient Animation*/
+
+.test-background {
+  width: 100wh;
+  color: #fff;
+  background: linear-gradient(-45deg, #666666, #000000, #303030, #9d9e9e);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  }
+
+  .test-text {
+    width: 100wh;
+    color: var(--gradient-text);
+    background: linear-gradient(-45deg, #00c3ff, #3686ff, #ff1cce, #0effff);
+    background-clip: text;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    }
+
+@-webkit-keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}

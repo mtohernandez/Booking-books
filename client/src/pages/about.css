@@ -1,0 +1,6 @@
+.text {
+    color: #ffff;
+    font-family: var(--font-family);
+    text-align: center;
+    margin-top: 200px;
+}

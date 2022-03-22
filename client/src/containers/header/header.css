@@ -1,0 +1,46 @@
+.booked__header{
+    display: flex;
+}
+
+.booked__header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.booked__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.booked__header-content p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.booked__header-content button{
+    flex: 0.3;
+    width: 10%;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(20, 164, 221);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+
+    line-height: 27px;
+}
+
+.booked__header-image{
+    margin-right: 15%;
+}
